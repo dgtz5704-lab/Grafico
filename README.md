@@ -1,1 +1,71 @@
-<!DOCTYPE html><html lang="es"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0"><meta name="description" content="Menú interactivo de Universidad del País Innova"><meta name="author" content="Tu Nombre o Usuario de GitHub"><title>Universidad del País Innova - Menú</title><style>*{margin:0;padding:0;box-sizing:border-box}body{font-family:'Segoe UI',Tahoma,Geneva,Verdana,sans-serif;background:linear-gradient(135deg,#e0f2fe 0%,#bae6fd 100%);min-height:100vh;display:flex;flex-direction:column;justify-content:center;align-items:center;padding:20px}.contenedor-principal{max-width:800px;width:100%;text-align:center;background-color:transparent;padding:30px;border-radius:20px}h1{color:#0f172a;font-size:2rem;margin-bottom:30px;text-shadow:1px 1px 2px rgba(255,255,255,.5)}.enlace-interactivo{display:inline-block;text-decoration:none;transition:transform .3s ease,box-shadow .3s ease;border-radius:15px}.imagen-menu{max-width:100%;height:auto;border-radius:15px;box-shadow:0 10px 25px rgba(0,0,0,.1);display:block}.enlace-interactivo:hover{transform:translateY(-8px);box-shadow:0 20px 35px rgba(0,0,0,.2)}.enlace-interactivo:active{transform:translateY(0);box-shadow:0 5px 15px rgba(0,0,0,.1)}footer{margin-top:50px;color:#475569;font-size:.9rem}</style></head><body><main class="contenedor-principal"><h1>Selecciona tu ruta de formación</h1><a href="1000622676.png" target="_blank" rel="noopener noreferrer" class="enlace-interactivo" aria-label="Abrir imagen de habilidades en una nueva pestaña"><img src="1000622304.png" alt="Menú de opciones: Maestría, Especialidad, Doctorado, Certificación, Cursos, Diplomado" class="imagen-menu"></a></main><footer><p>Haz clic en el menú para ver los detalles de las habilidades.</p></footer></body></html>
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menú Interactivo</title>
+    <style>
+        /* Estilos generales para centrar el menú en la pantalla */
+        body {
+            margin: 0;
+            padding: 20px;
+            display: flex;
+            justify-content: center;
+            background-color: #e0f2fe; /* Fondo acorde a los colores de tu imagen */
+        }
+        .contenedor-principal {
+            width: 100%;
+        }
+        /* Tus estilos originales del menú */
+        .menu {
+            position: relative;
+            width: 100%;
+            max-width: 700px;
+            margin: auto;
+        }
+        .fondo {
+            width: 100%;
+            display: block;
+            border-radius: 25px;
+        }
+        .btn {
+            position: absolute;
+            left: 34%;
+            width: 33%;
+            height: 8%;
+            border-radius: 40px;
+            transition: .3s;
+        }
+        .btn:hover {
+            transform: scale(1.05);
+            box-shadow: 0 0 25px rgba(0, 140, 255, .6);
+            /* Le añadimos un fondo blanco casi transparente para que destaque más al hacer hover */
+            background-color: rgba(255, 255, 255, 0.1);
+        }
+        /* Posiciones exactas de cada botón */
+        .b1 { top: 18%; }
+        .b2 { top: 33%; }
+        .b3 { top: 48%; }
+        .b4 { top: 63%; }
+        .b5 { top: 78%; }
+        .b6 { top: 92%; }
+    </style>
+</head>
+<body>
+    <main class="contenedor-principal">
+        <div class="menu">
+            <!-- Imagen de fondo (El menú) -->
+            <img src="1000622304.png" class="fondo" alt="Menú de Universidad del País Innova">
+            <!-- Botones superpuestos -->
+            <!-- El botón 1 abre tu segunda imagen -->
+            <a class="btn b1" href="1000622676.png" target="_blank" title="Maestría"></a>
+            <!-- Los demás botones -->
+            <a class="btn b2" href="especialidad.html" title="Especialidad"></a>
+            <a class="btn b3" href="doctorado.html" title="Doctorado"></a>
+            <a class="btn b4" href="certificacion.html" title="Certificación"></a>
+            <a class="btn b5" href="cursos.html" title="Cursos"></a>
+            <a class="btn b6" href="diplomado.html" title="Diplomado"></a>
+        </div>
+    </main>
+</body>
+</html>
